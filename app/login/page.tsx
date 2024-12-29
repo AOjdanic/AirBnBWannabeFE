@@ -17,6 +17,8 @@ export default function Login() {
       passwordRef?.current?.value,
     );
 
+    console.log("this");
+
     const res = await Api.post("/users/login", {
       email: emailRef?.current?.value,
       password: passwordRef?.current?.value,
